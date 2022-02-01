@@ -1,0 +1,174 @@
+\documentclass[8pt, letterpaper, titlepage]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{color,graphicx,overpic} 
+\usepackage{fancyhdr}
+\usepackage{amsmath,amsthm,amsfonts,amssymb}
+\usepackage{mathtools}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{array}
+\usepackage{float}
+\usepackage{blindtext}
+\usepackage{longtable}
+\usepackage{scrextend}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage[framemethod=tikz]{mdframed}
+\usepackage{calc}
+\usepackage{titlesec}
+\usepackage{listings}
+\usepackage{siunitx}
+\usepackage[normalem]{ulem}
+\usepackage{tabularx}
+\usepackage{mathrsfs}
+\usepackage{bookmark}
+\usepackage{setspace}
+\usepackage{tabularx}
+\usepackage{ltablex}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage[simplified]{pgf
+-umlcd}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\newcommand\myeq{\stackrel{\mathclap{\normalfont\mbox{def}}}{=}}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\mathtoolsset{showonlyrefs}  
+\allowdisplaybreaks
+
+\definecolor{mycolor}{rgb}{0, 0, 0}
+
+\geometry{top=2.54cm, left=2.54cm, right=2.54cm, bottom=2.54cm}
+
+% Indentation/space between paragraphs
+\setlength{\headheight}{15pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% Line spacing
+\renewcommand{\baselinestretch}{1.5} 
+
+% Line spacing
+\renewcommand{\baselinestretch}{1.3} 
+
+% Title page
+\title{\textbf{\Huge{ 
+\begin{center}
+ECE 421\\ \large{A1} % Document name
+\end{center} 
+}}}
+
+\author{Lora Ma}
+
+% Header/Footer
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\textit{Lora Ma}}
+\lhead{\textit{ECE 421 - Assignment 1}}
+\rfoot{\thepage}
+
+\lstdefinestyle{myLuastyle}
+{
+  language         = {[5.0]Lua},
+  basicstyle       = \ttfamily,
+  showstringspaces = false,
+  upquote          = true,
+}
+
+\lstset{style=myLuastyle}
+% Hyperlink colors
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,      
+    urlcolor=blue,
+}
+
+\begin{document}
+\section*{Question 1}
+In computer science, functional programming is a declarative programming paradigm in which programs are constructed by applying and creating functions. Purely functional programming treats all functions as deterministic mathematical functions. When a function is called with some input, it will always return the same result and is not affected by any mutable state or side effects (memory or I/O). Usually in functional programming, programs are written in a declarative and composable style.
+
+\section*{Question 2}
+The given Haskell program sums up the numbers from 0 to 100. This is not a pure function since the beginning of the program produces a side-affect by using I/O. Although Haskell is a pure functional programming language, the program seems to be written in an imperative style instead of a declarative style.
+
+\section*{Question 3}
+Immutable object are useful because they are inherently thread-safe and good for sharing information between threads. Programs that use immutable objects are easier to understand since you don't need to think about how objects may evolve over time. 
+
+\section*{Question 4}
+\begin{enumerate}[label=\alph*.]
+  \item \lstinline{int x = y + z;}
+  \item \lstinline{let x = y + z}
+  \item All language allow mutability to some degree -- even functional programming languages such as Haskell.
+\end{enumerate}
+
+\section*{Question 5}
+\begin{enumerate}[label=\alph*.]
+  \item \begin{itemize}
+    \item \lstinline{imperativefun} sums the square of each value in the list and returns the sum
+    \item \lstinline{functionalfun} also sums the square of each value in the list and returns the sum but is written in a declarative style.
+  \end{itemize}
+  \item \textbf{Reliability:} there is no difference in reliability between the two \\
+ \textbf{Efficiency:} the efficiency between functional and imperative programs are the same. \\
+  \textbf{Maintainability:} \lstinline{functionalfun} seems shorter and easier to understand which can help it be more maintainable. \\
+\textbf{Portability:} There is no difference in portability.
+\item \lstinline{let fourthpower x = sqrtx x * sqrtx x;}
+\end{enumerate}
+
+\section*{Question 6}
+\begin{itemize}
+  \item Changing the file system is not a pure function. It has a side effect.
+  \item Inserting a record into a database is not a pure function.
+  \item Making an http call is not a pure function. A given input may not return the same output.
+  \item Mutations is not a pure function
+  \item Printing to the screen / logging is not a pure function. It uses I/O, a side effect.
+  \item Obtaining user input is not a pure function. It also uses I/O, a side affect.
+  \item Querying the DOM could be a pure function if the output only depends on the DOM and does not mutate anything
+  \item Accessing system state is not a pure function. The system state can change and return something different for a given input.
+  \item Math.random() is not a pure function. It returns something random every time, so the output is different for a given input.
+\end{itemize}
+
+\section*{Question 7}
+\begin{lstlisting}
+fn another_function(x: i32) -> i32 {
+  let mut sum = 0;
+  for i in 1..x+1 {
+      sum = sum + (i*i + 2)
+  }
+  return sum;
+}
+\end{lstlisting}
+
+\section*{Question 8}
+\begin{lstlisting}
+fn volumeofsphere(r: f32) -> f32 {
+  (4.0 / 3.0) * (3.14) * r * r * r
+}
+\end{lstlisting}
+\section*{Question 9}
+The Scheme function returns a count of all the elements in a list and its nested lists not including \#f.
+
+\section*{Question 10}
+\begin{enumerate}[label=\alph*.]
+  \item There doesn't seem to be any compiler errors when we run the code. Partial application in Haskell involves passing less than the full number of arguments to a function that takes multiple arguments. This does not throw an error.
+  \item Running the given Rust code causes the compiler to throw an error. The errors says \lstinline{error[E0004]: non-exhaustive patterns: `&Blue` not covered}. It is unhappy that the pattern \lstinline{Blue} defined by \lstinline{Color} is not covered in the pattern matching statement.
+\end{enumerate}
+\end{document}

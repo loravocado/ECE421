@@ -1,0 +1,11 @@
+C:\Users\Lora\Documents\School\Winter2022\ECE421\Labs\Lab1\Deliverable2\hello_world\target\debug\deps\getrandom-5f0fa663b29fead3.rmeta: C:\Users\Lora\.cargo\registry\src\github.com-1ecc6299db9ec823\getrandom-0.1.16\src\lib.rs C:\Users\Lora\.cargo\registry\src\github.com-1ecc6299db9ec823\getrandom-0.1.16\src\error.rs C:\Users\Lora\.cargo\registry\src\github.com-1ecc6299db9ec823\getrandom-0.1.16\src\util.rs C:\Users\Lora\.cargo\registry\src\github.com-1ecc6299db9ec823\getrandom-0.1.16\src\error_impls.rs C:\Users\Lora\.cargo\registry\src\github.com-1ecc6299db9ec823\getrandom-0.1.16\src\windows.rs
+
+C:\Users\Lora\Documents\School\Winter2022\ECE421\Labs\Lab1\Deliverable2\hello_world\target\debug\deps\libgetrandom-5f0fa663b29fead3.rlib: C:\Users\Lora\.cargo\registry\src\github.com-1ecc6299db9ec823\getrandom-0.1.16\src\lib.rs C:\Users\Lora\.cargo\registry\src\github.com-1ecc6299db9ec823\getrandom-0.1.16\src\error.rs C:\Users\Lora\.cargo\registry\src\github.com-1ecc6299db9ec823\getrandom-0.1.16\src\util.rs C:\Users\Lora\.cargo\registry\src\github.com-1ecc6299db9ec823\getrandom-0.1.16\src\error_impls.rs C:\Users\Lora\.cargo\registry\src\github.com-1ecc6299db9ec823\getrandom-0.1.16\src\windows.rs
+
+C:\Users\Lora\Documents\School\Winter2022\ECE421\Labs\Lab1\Deliverable2\hello_world\target\debug\deps\getrandom-5f0fa663b29fead3.d: C:\Users\Lora\.cargo\registry\src\github.com-1ecc6299db9ec823\getrandom-0.1.16\src\lib.rs C:\Users\Lora\.cargo\registry\src\github.com-1ecc6299db9ec823\getrandom-0.1.16\src\error.rs C:\Users\Lora\.cargo\registry\src\github.com-1ecc6299db9ec823\getrandom-0.1.16\src\util.rs C:\Users\Lora\.cargo\registry\src\github.com-1ecc6299db9ec823\getrandom-0.1.16\src\error_impls.rs C:\Users\Lora\.cargo\registry\src\github.com-1ecc6299db9ec823\getrandom-0.1.16\src\windows.rs
+
+C:\Users\Lora\.cargo\registry\src\github.com-1ecc6299db9ec823\getrandom-0.1.16\src\lib.rs:
+C:\Users\Lora\.cargo\registry\src\github.com-1ecc6299db9ec823\getrandom-0.1.16\src\error.rs:
+C:\Users\Lora\.cargo\registry\src\github.com-1ecc6299db9ec823\getrandom-0.1.16\src\util.rs:
+C:\Users\Lora\.cargo\registry\src\github.com-1ecc6299db9ec823\getrandom-0.1.16\src\error_impls.rs:
+C:\Users\Lora\.cargo\registry\src\github.com-1ecc6299db9ec823\getrandom-0.1.16\src\windows.rs:

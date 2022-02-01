@@ -1,0 +1,9 @@
+Question 1:
+1. Retrieve the lazily-initialized thread-local random number generator, seeded by the system
+
+2. Loops
+    Gets a random candidate integer between 0 and n 
+    Sets the bit at index 0 to 1
+    checks if 64-bit unsigned integer from address of candidate is true. If so, break out of loop and return candidate value
+
+Question 2:
